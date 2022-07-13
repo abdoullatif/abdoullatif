@@ -1,3 +1,5 @@
+
+
 Configurez votre identité
 git config --global user.name "John Doe" $ git config 
 --global user.email johndoe@example.com
@@ -24,6 +26,8 @@ git init
 Indexez vos fichiers
 git add .
 
+git status
+
 Créez une nouvelle version avec la commande git commit
 git commit -m “Ajout des fichiers html et css de base”
 
@@ -35,5 +39,89 @@ origin https://github.com/EtudiantOC/OpenclassroomsProject
 git branch -M main
 
 git push -u origin main
+
+Voir la branche courante
+git branch
+
+Creer une nouvelle branche
+git branch nomdelabranche
+
+Changer de branche
+git checkout nomdelabranche
+
+Fusionnez votre travail avec la commande git merge
+Revenir la branche principale et
+git merge nomdelabranche
+Merge made by the 'recursive' strategy
+
+Travaillez avec un dépôt distant
+git clone https://github.com/OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git
+
+raccourci url remote
+git remote add OC https://github.com/OpenClassrooms-Student-Center/7162856-G-rez-Git-et-GitHub.git
+
+Mettez à jour  le dépôt en local
+git pull origin main
+
+Enregistre les modifications non indexées pour une utilisation ultérieure. 
+git stash
+git stash list
+git stash apply
+git stash apply stash@{0}
+
+Cette ligne de commande va supprimer de la branche principale votre dernier commit. 
+git reset --hard HEAD^
+
+Historique de commit
+git log commit
+Ex: ca83a6dff817ec66f443420071545390a954664949 Author: Marc 
+
+Revenir a un commit, 8 charatere de la cle du commit
+git reset --hard ca83a6df
+
+Le message de mon commit est erroné
+Changer le message du dernier commit effectuer
+git commit --amend -m "Votre nouveau message de commit"
+
+Commit un fichier oublier apres le dernier commit
+git commit --amend --no-edit
+
+permet d'annuler un commit en créant un nouveau commit
+git revert HEAD^
+
+Utilisez git reset
+Cette commande permet de revenir à n'importe quel commit mais en oubliant absolument tout ce qu'il s'est passé après
+git reset notreCommitCible --hard
+
+git reset --mixed
+
+git reset HEAD~
+
+git reset   ==  git reset --mixed HEAD~
+
+git reset --soft
+
+Consulter l'historique de votre projet
+énumère en ordre chronologique inversé
+git log
+va loguer les commits ainsi que toutes les autres actions que vous avez pu faire en loca
+git reflog
+
+Pour revenir à une action donnée, on prend les 8 premiers caractères de son SHA et on fait :
+git checkout e789e7c
+
+permet d’examiner le contenu d’un fichier ligne par ligne et de déterminer la date à laquelle chaque ligne a été modifiée, et le nom de l’auteur des modifications
+git blame
+git blame monFichier.php
+
+Cette commande va permettre de sélectionner un ou plusieurs commits grâce à leur SHA (décidément ils sont partout) et de les migrer sur la branche principale
+git cherry-pick d356940 de966d4
+
+
+
+
+
+
+
 
 
