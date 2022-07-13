@@ -1,0 +1,39 @@
+Configurez votre identité
+git config --global user.name "John Doe" $ git config 
+--global user.email johndoe@example.com
+
+Grâce à l’option --global, vous n’aurez besoin de le faire qu'une fois.
+Si vous souhaitez, pour un projet spécifique, changer votre nom d’utilisateur, vous devrez repasser cette ligne mais sans le --global.
+
+Pour vérifier que vos paramètres ont bien été pris en compte, et vérifier les autres paramètres, il suffit de passer la commande  
+git config --list
+
+Configurez les couleurs
+
+git config --global color.diff auto $ git config
+ --global color.status auto $ git config --global
+ color.branch auto
+ 
+ Configurez l’éditeur
+ git config --global core.editor notepad++ $ git config 
+--global merge.tool vimdiff
+
+Créez votre dépôt local
+git init
+
+Indexez vos fichiers
+git add .
+
+Créez une nouvelle version avec la commande git commit
+git commit -m “Ajout des fichiers html et css de base”
+
+Envoyez votre commit sur le dépôt distant avec la commande git push
+git remote add 
+origin https://github.com/EtudiantOC/OpenclassroomsProject
+.git
+
+git branch -M main
+
+git push -u origin main
+
+
