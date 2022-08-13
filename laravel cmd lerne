@@ -1,15 +1,25 @@
 Composer and Artisan
+
+
+Installation Via Composer:
+composer create-project laravel/laravel example-app
+
+
+The Laravel Installer:
+composer global require laravel/installer
+laravel new example-app
+
+
 php artisan [ options] [ arguments]
 
 Commandes de base de Laravel
 
 php artisan [command] [options] [arguments]
+options :  Il peut être utilisé comme –h (pour l'aide), -q (pour le silence), -v (pour la version) etc.
+commandes :  il peut être utilisé selon le nom de la commande suivi d'options et d'arguments. Peu de commandes sont migrate, serve, make, help, etc.
 
 1. Pour lister toutes les commandes Artisan
 php artisan list
-
-options :  Il peut être utilisé comme –h (pour l'aide), -q (pour le silence), -v (pour la version) etc.
-commandes :  il peut être utilisé selon le nom de la commande suivi d'options et d'arguments. Peu de commandes sont migrate, serve, make, help, etc.
 
 php artisan help makes:auth
 make : auth :  C'est le nom de la commande pour laquelle on aimerait en savoir plus.
@@ -98,6 +108,16 @@ php artisan make job SendReminderEmail_for_ANalytocs@EduCBA
 
 
 
+
+
+
+
+
+
+
+
+
+
 Articles recommandés
 Cela a été un guide pour les commandes Laravel. Ici, nous avons discuté des commandes Laravel de base, immédiates et avancées à l'aide d'exemples. 
 Vous pouvez également consulter les articles suivants pour en savoir plus.
@@ -106,21 +126,4 @@ Commandes Docker https://www.educba.com/docker-commands/
 Commandes CSS https://www.educba.com/css-commands/
 Contrôleur d'itinéraire Laravel https://www.educba.com/laravel-route-controller/
 Modèles Laravel https://www.educba.com/laravel-models/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
