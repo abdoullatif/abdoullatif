@@ -11,7 +11,6 @@ Pour vérifier que vos paramètres ont bien été pris en compte, et vérifier l
 git config --list
 
 Configurez les couleurs
-
 git config --global color.diff auto $ git config
  --global color.status auto $ git config --global
  color.branch auto
@@ -26,18 +25,23 @@ git init
 Indexez vos fichiers
 git add .
 
+Voir l'etat des fichier
 git status
 
 Créez une nouvelle version avec la commande git commit
-git commit -m “Ajout des fichiers html et css de base”
+git commit
+git commit -m “message”
 
 Envoyez votre commit sur le dépôt distant avec la commande git push
-git remote add 
-origin https://github.com/EtudiantOC/OpenclassroomsProject
-.git
+git remote add origin 'your_url_name'
+git remote add origin https://github.com/exemple/exemple.git
 
+//
 git branch -M main
 
+lancer le commit sur le git distant
+git push 'remote_name' 'branch_name'
+git push -u origin master
 git push -u origin main
 
 Voir la branche courante
@@ -51,7 +55,7 @@ git checkout nomdelabranche
 
 Fusionnez votre travail avec la commande git merge
 Revenir la branche principale et
-git merge nomdelabranche
+git merge nomdelabranche 
 Merge made by the 'recursive' strategy
 
 Travaillez avec un dépôt distant
@@ -117,6 +121,16 @@ git blame monFichier.php
 Cette commande va permettre de sélectionner un ou plusieurs commits grâce à leur SHA (décidément ils sont partout) et de les migrer sur la branche principale
 git cherry-pick d356940 de966d4
 
+PULL Request
+Tirer une version du repository
+git pull 'remote_name' 'branch_name'
+git pull
+
+Fetch
+git fetch
+
+fusionner pull et merge to local
+git merge
 
 
 
@@ -125,3 +139,8 @@ git cherry-pick d356940 de966d4
 
 
 
+
+
+
+Autre #ref
+https://www.datacamp.com/tutorial/git-push-pull
