@@ -1,0 +1,27 @@
+Create a Django project
+django-admin startproject <project_name>
+
+Make migrations command
+python manage.py makemigrations
+
+Migrate Command
+python manage.py migrate
+
+Collect static files
+python manage.py collectstatic 
+
+Create a Django App
+python manage.py startapp <app_name>
+
+Create a superuser
+python manage.py createsuperuser
+
+Change the password
+python manage.py changepassword <username>
+
+Run server
+python manage.py runserver 
+
+
+
+
