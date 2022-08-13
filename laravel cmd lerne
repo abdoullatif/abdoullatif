@@ -44,10 +44,10 @@ php artisan serve
 Cette commande est utilisée pour créer une nouvelle classe de modèle.
 php artisan make: model nomModele
 
-Cette commande créera un nouveau fichier de contrôleur dans le dossier Application/Http/Contrôleurs
+Cette commande créera un nouveau fichier de contrôleur dans le dossier Application/Http/Controllers
 php artisan make: controller UserController
 
-Cette commande est utilisée pour créer une nouvelle classe de demande de formulaire dans le dossier app/Http/Demandes
+Cette commande est utilisée pour créer une nouvelle classe de demande de formulaire dans le dossier app/Http/Requests
 php artisan make- request EduCBA_BlogPost
 
 Cette commande est utilisée pour créer une nouvelle classe de générateur de base de données.
@@ -89,7 +89,23 @@ php artisan make provider OurServiceProvider
 Cette commande est utilisée pour créer un nouveau fichier de migration
 php artisan migrate:make name [--bench="vendor/package"] [--create] [--package[="..."]] [--path[="..."]] [--table[="..."]]
 
+Cette commande est utilisée pour créer une nouvelle classe de travail.
+php artisan make job SendReminderEmail_for_ANalytocs@EduCBA
 
+
+
+
+
+
+
+Articles recommandés
+Cela a été un guide pour les commandes Laravel. Ici, nous avons discuté des commandes Laravel de base, immédiates et avancées à l'aide d'exemples. 
+Vous pouvez également consulter les articles suivants pour en savoir plus.
+
+Commandes Docker https://www.educba.com/docker-commands/
+Commandes CSS https://www.educba.com/css-commands/
+Contrôleur d'itinéraire Laravel https://www.educba.com/laravel-route-controller/
+Modèles Laravel https://www.educba.com/laravel-models/
 
 
 
