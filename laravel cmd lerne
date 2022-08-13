@@ -1,0 +1,110 @@
+Composer and Artisan
+php artisan [ options] [ arguments]
+
+Commandes de base de Laravel
+
+php artisan [command] [options] [arguments]
+
+1. Pour lister toutes les commandes Artisan
+php artisan list
+
+options :  Il peut être utilisé comme –h (pour l'aide), -q (pour le silence), -v (pour la version) etc.
+commandes :  il peut être utilisé selon le nom de la commande suivi d'options et d'arguments. Peu de commandes sont migrate, serve, make, help, etc.
+
+php artisan help makes:auth
+make : auth :  C'est le nom de la commande pour laquelle on aimerait en savoir plus.
+
+Cette commande listera la version du framework Laravel que vous utilisez.
+php artisan –version
+
+Cette commande est utilisée pour mettre l'application laravel en mode maintenance.
+php artisan down
+
+Cette commande est utilisée pour remettre l'application laravel en marche.
+php artisan up
+
+Cette commande vous indiquera l'environnement dans lequel l'application laravel s'exécute.
+php artisan env
+
+Cette commande laravel effacera tous les fichiers de vue compilés.
+php artisan view: clear
+
+Cette commande listera toutes les routes enregistrées.
+php artisan route: list
+
+Cette commande effacera tout le fichier de cache de route.
+php artisan route: cache
+
+
+Commandes Laravel intermédiaires
+
+Cette commande est utilisée pour démarrer un projet laravel, et par défaut, l'application sera hébergée sur localhost avec le numéro de port 8000
+php artisan serve
+
+Cette commande est utilisée pour créer une nouvelle classe de modèle.
+php artisan make: model nomModele
+
+Cette commande créera un nouveau fichier de contrôleur dans le dossier Application/Http/Contrôleurs
+php artisan make: controller UserController
+
+Cette commande est utilisée pour créer une nouvelle classe de demande de formulaire dans le dossier app/Http/Demandes
+php artisan make- request EduCBA_BlogPost
+
+Cette commande est utilisée pour créer une nouvelle classe de générateur de base de données.
+php artisan make seeder EduCBASeeder
+
+Cette commande est utilisée pour créer une nouvelle classe middleware.
+php artisan make middleware Middleware_Name
+
+Cette commande est utilisée pour créer une nouvelle classe de stratégie.
+php artisan make: policy OurPolicy
+
+Cette commande est utilisée pour créer une nouvelle classe de messagerie.
+php artisan make: mail Course_Enrolled@EduCBA
+
+Cette commande est utilisée pour créer une nouvelle classe paire.
+php artisan make: event EduCBA_Analytics_Enrolled
+
+Cette commande est utilisée pour créer une nouvelle commande artisanale Laravel
+php artisan make: command compose_email
+
+
+Commandes Laravel avancées
+
+Cette commande permet de créer un nouveau fichier de migration pour le modèle (migration), de créer un nouveau contrôleur pour le modèle (contrôleur) et d'avoir un contrôleur de ressources pour le contrôleur généré.
+php artisan make: model Project --migration --controller --resource
+
+Cette commande est utilisée pour créer une nouvelle classe d'écouteurs d'événements.
+php artisan make:listener SendEnrollement_Notification
+
+Cette commande est utilisée pour effectuer la migration de la base de données.
+php artisan migrate [--bench="vendor/package"] [--database[="..."]] [--path[="..."]] [--package[="..."]] [--pretend] [--seed]
+
+Cette commande est utilisée pour publier tous les actifs publiables à partir des packages de fournisseurs.
+php artisan vendor: publish
+
+Cette commande est utilisée pour créer une nouvelle classe de fournisseur de services.
+php artisan make provider OurServiceProvider
+
+Cette commande est utilisée pour créer un nouveau fichier de migration
+php artisan migrate:make name [--bench="vendor/package"] [--create] [--package[="..."]] [--path[="..."]] [--table[="..."]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
