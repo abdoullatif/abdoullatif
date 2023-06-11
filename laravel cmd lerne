@@ -103,8 +103,33 @@ Cette commande est utilisée pour créer une nouvelle classe de travail.
 php artisan make job SendReminderEmail_for_ANalytocs@EduCBA
 
 
+Pour exécuter une migration
+php artisan migrate
+
+Pour revenir sur la dernière migration
+php artisan migrate:rollback'
+
+lorsque nous devons revenir en arrière jusqu'à des étapes spécifiques, nous pouvons passer des étapes dans la commande de rappel comme
+php artisan migrate:rollback --step=3
+
+Ajout/Mise à jour des colonnes dans le tableau
+php artisan make:migration update_name_column_in_contacts_table
+
+Modificateurs de colonne
+Ajouter/Renommer/Supprimer des index de base de données
+For renaming a index you can use renameIndex()
+$table->renameIndex('email', 'mobile_no');
+
+For dropping a index you can use dropIndex()
+$table->dropIndex('email');
 
 
+Contraintes de clés étrangères
+$table->foreignId('user_id')
+      ->constrained('users')
+      ->cascadeOnUpdate()
+      ->cascadeOnDelete();
+      
 
 
 
@@ -126,4 +151,5 @@ Commandes Docker https://www.educba.com/docker-commands/
 Commandes CSS https://www.educba.com/css-commands/
 Contrôleur d'itinéraire Laravel https://www.educba.com/laravel-route-controller/
 Modèles Laravel https://www.educba.com/laravel-models/
+commande laravel https://benjamincrozat.com/laravel-migrations
 
