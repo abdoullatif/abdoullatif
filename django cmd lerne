@@ -30,6 +30,31 @@ python manage.py runserver
 
 --------------------------------------------------------------------
 
+Environnement Virtuel Python
+
+Création d'un environnement virtuel :
+python -m venv nom_de_lenvironnement
+
+Activation de l'environnement virtuel :
+  Sur Windows :
+  nom_de_lenvironnement\Scripts\activate
+  Sur macOS/Linux :
+  source nom_de_lenvironnement/bin/activate
+
+Désactivation de l'environnement virtuel :
+deactivate
+
+Installation d'un package dans l'environnement virtuel :
+pip install nom_du_package
+
+Exportation des dépendances dans un fichier requirements.txt :
+pip freeze > requirements.txt
+
+Installation des dépendances depuis un fichier requirements.txt :
+pip install -r requirements.txt
+
+
+---------------------------------------------------------------------
 
 django-admin check                       
 Checks the entire Django project for potential problems
