@@ -41,4 +41,26 @@ docker build -t nom_de_votre_projet .
 Lancer le conteneur Docker :
 docker run -p 8000:8000 nom_de_votre_projet
 
+--------------------------------------------------
 
+Docker pull
+
+docker run --name es01 --net elastic -p 9200:9200 -it docker.elastic.co/elasticsearch/elasticsearch:8.9.1
+
+Docker stop container [name]
+
+
+docker kill CONTAINER [CONTAINER...]
+
+List des container 
+
+docker ps
+
+docker ps -a
+
+docker ps -a -f status=running
+
+
+Remove
+
+docker rm [OPTIONS] CONTAINER [CONTAINER...]
