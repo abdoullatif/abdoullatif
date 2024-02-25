@@ -1,0 +1,10 @@
+#Installation de React
+ #Vite
+
+npm create vite@latest .
+name : name 
+framework : React
+variant : Javascript
+
+npm install
+npm run dev
