@@ -9,5 +9,17 @@ variant : Javascript
 npm install
 npm run dev
 -------------------------------
-
+pluging
 npm install recharts react-icons
+------------------------------------
+
+yarn create react-app name
+
+npx create-react-app name
+
+yarn start / npm start
+
+-------------------------------------------------
+package essentiel
+npm i @mui/material @emotion/react @emotion/styled @mui/x-data-grid @mui/icons-material react-router-dom@6 react-pro-sidebar formik yup @f
+ullcalendar/core @fullcalendar/daygrid @fullcalendar/interaction @fullcalendar/timegrid @fullcalendar/list @fullcalendar/react @nivo/core @nivo/pie @nivo/line @nivo/bar @nivo/geo
