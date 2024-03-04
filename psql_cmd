@@ -1,0 +1,18 @@
+Postgresql commande
+pip install psycopg2
+brew install postgresql
+------------------------
+psql
+
+----------------------
+Demarer le serveur
+brew services start postgresql
+
+------------------------
+Creer une nouvelle base de donnees
+
+createdb -O user namedb
+
+
+
+
