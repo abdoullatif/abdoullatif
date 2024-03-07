@@ -32,6 +32,9 @@ python manage.py runserver
 
 Environnement Virtuel Python
 
+Openclro
+virtualenv -p python3 env
+
 Création d'un environnement virtuel :
 python -m venv nom_de_lenvironnement
 
@@ -55,6 +58,10 @@ pip install -r requirements.txt
 
 
 ---------------------------------------------------------------------
+django debug toolbar
+pip install django-debug-toolbar
+
+----------------------------------------------------------------------------
 
 django-admin check                       
 Checks the entire Django project for potential problems
