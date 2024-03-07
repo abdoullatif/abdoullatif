@@ -1,6 +1,6 @@
 #Installation de React
  #Vite
-
+------------------------------------------
 npm create vite@latest .
 name : name 
 framework : React
@@ -21,5 +21,43 @@ yarn start / npm start
 
 -------------------------------------------------
 package essentiel
-npm i @mui/material @emotion/react @emotion/styled @mui/x-data-grid @mui/icons-material react-router-dom@6 react-pro-sidebar formik yup @f
-ullcalendar/core @fullcalendar/daygrid @fullcalendar/interaction @fullcalendar/timegrid @fullcalendar/list @fullcalendar/react @nivo/core @nivo/pie @nivo/line @nivo/bar @nivo/geo
+npm i @mui/material @emotion/react @emotion/styled @mui/x-data-grid @mui/icons-material react-router-dom@6 react-pro-sidebar formik yup @fullcalendar/core @fullcalendar/daygrid 
+@fullcalendar/interaction @fullcalendar/timegrid @fullcalendar/list @fullcalendar/react @nivo/core @nivo/pie @nivo/line @nivo/bar @nivo/geo
+-------------------------------------------------
+
+npm i react-router-dom
+
+------------------------------------------------
+Boostrap
+
+npm install --save bootstrap@latest
+
+npm i react-bootstrap
+
+--------------------------------------------------
+
+React-data-table
+
+npm i react-data-table-component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
