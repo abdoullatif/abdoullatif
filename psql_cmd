@@ -10,8 +10,28 @@ brew services start postgresql
 
 ------------------------
 Creer une nouvelle base de donnees
-
 createdb -O user namedb
+
+voir les base de donnees 
+\l
+
+quitter 
+\q
+
+Changer la base de donnees par default de psql
+export PGDATABASE=postgres
+
+Creer un utilisateur :
+createuser username
+
+creer un utilisateur en interactive avec la bd :
+createuser --interactive username
+
+supprimer la base de donnee en shell
+dropdb dbname
+
+se connecter psql avec un autre user
+
 
 
 
