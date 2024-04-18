@@ -154,6 +154,10 @@ django-admin version
 display the current Django version
 
 
+----------------------------------------------------------------
+Librairie pour les images
+pip install pillow
+
 
 
 
