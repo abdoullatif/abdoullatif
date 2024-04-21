@@ -32,11 +32,11 @@ python manage.py runserver
 
 Environnement Virtuel Python
 
-Openclro
+Openclassroom create
 virtualenv -p python3 env
 
 Création d'un environnement virtuel :
-python -m venv nom_de_lenvironnement
+ A revoir : python -m venv nom_de_lenvironnement
 
 Activation de l'environnement virtuel :
   Sur Windows :
@@ -156,9 +156,18 @@ display the current Django version
 
 ----------------------------------------------------------------
 Librairie pour les images
-pip install pillow
+pip install Pillow
 
+-------------------------------------------------------------------
+cat requirements.txt
 
+Migration :
+python manage.py makemigrations
+
+python manage.py migrate
+
+---------------------------------------------------
+python manage.py createsuperuser
 
 
 
