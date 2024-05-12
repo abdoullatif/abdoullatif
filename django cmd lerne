@@ -194,6 +194,10 @@ CELERY_BEAT_SCHEDULE = {
     },
 }
 
+Lancement du servveur celery
+
+celery -A my_project_name worker --beat
+
 ---------------------------------------------------
 
 
