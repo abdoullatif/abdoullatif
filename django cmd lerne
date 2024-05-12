@@ -6,6 +6,8 @@ pip install Django
 Create a Django project
 django-admin startproject <project_name>
 
+----------------------------------------------------------------------
+
 Make migrations command
 python manage.py makemigrations
 
@@ -154,7 +156,8 @@ django-admin version
 display the current Django version
 
 
-----------------------------------------------------------------
+-------------------------------------------------------------------
+
 Librairie pour les images
 pip install Pillow
 
@@ -168,6 +171,30 @@ python manage.py migrate
 
 ---------------------------------------------------
 python manage.py createsuperuser
+---------------------------------------------------
+
+Pour la gestion des taches periodiques
+
+pip install celery django-celery-beat
+
+Utilisation
+
+Au dessus de la fonction
+@shared_task
+
+
+Setting.py
+
+# settings.py
+
+CELERY_BEAT_SCHEDULE = {
+    'fetch_kobo_data_every_minute': {
+        'task': 'le_module.tasks.nom_de_fonction',  # Chemin vers votre tâche Celery
+        'schedule': 60.0,  # Exécuter toutes les 1 minute
+    },
+}
+
+---------------------------------------------------
 
 
 
