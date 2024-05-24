@@ -133,7 +133,10 @@ fusionner pull et merge to local
 git merge
 
 
+-----------------------------------------------------------------------------------------
 
+changer de branch :
+git checkout -b coreMIS origin/coreMIS
 
 
 
