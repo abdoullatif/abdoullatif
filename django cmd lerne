@@ -2,7 +2,12 @@ PIP gestionnaire de packahe python
 
 pip install pip==<version>
 
+upgrade
 
+pip install --upgrade pip
+
+version
+pip --version
 
 --------------------------------------------------------------------
 
