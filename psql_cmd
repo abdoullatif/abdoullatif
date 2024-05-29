@@ -15,6 +15,8 @@ createdb -O user namedb
 voir les base de donnees 
 \l
 
+\l+
+
 quitter 
 \q
 
@@ -33,6 +35,78 @@ dropdb dbname
 se connecter psql avec un autre user
 
 
+-----------------------------------------------------------------------------------
+Creer une base de donner
+CREATE DATABASE database_name;
+
+changer de base de donnees
+\c database_name
+
+Supprimer une base de donnees
+DROP DATABASE database_name;
+
+DROP DATABASE IF EXISTS database_name;
+
+Creer une table 
+CREATE TABLE table_name();
+
+CREATE TABLE authors(
+	author_id SERIAL PRIMARY KEY, 
+	first_name VARCHAR(100) NOT NULL, 
+	last_name VARCHAR(100) NOT NULL
+);
+
+
+Ajouter une cle entranger 
+ALTER TABLE books ADD COLUMN author_id INT REFERENCES authors(author_id);
+
+
+inserer des donnees
+INSERT INTO authors (first_name, last_name) 
+VALUES (‘Tamsyn’, ‘Muir’), (‘Ann’, ‘Leckie’), (‘Zen’, ‘Cho’);
+
+Voir des info
+SELECT * FROM authors;
+
+Voir les tables d'une base de donnees
+\dt
+
+Description d'un tableau
+\d table_name
+
+Renommer une table
+ALTER TABLE table_name RENAME TO new_table_name;
+
+Supprimer une table
+DROP TABLE table_name;
+
+DROP TABLE IF EXISTS table_name;
+
+Ouvrir un editeur
+\e
+
+
+Executer des messages et commande a partir d;un fichier
+\i path_to_file/file_name.sql
+
+Chronometrer une requete
+\timing
+
+
+Importer un CSV
+\copy films(title, year, running_time) FROM 'path_to_file' DELIMITER ‘,’ CSV HEADER
+
+Sauvegarder une base de donnee 
+cd "C:\Program Files\PostgreSQL\14\bin"
+
+pg_dump -U username database_name > path_to_file/filename.sql
+
+
+Restaurer une base de donnees
+psql -U username -d database_name -f path_to_file/filename.sql
+
+Acceder a la base de donnee
+psql -U your_username -d your_database
 
 
 
