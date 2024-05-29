@@ -1,3 +1,13 @@
+PIP gestionnaire de packahe python
+
+pip install pip==<version>
+
+
+
+--------------------------------------------------------------------
+
+
+
 Install Django
 pip install Django
 
