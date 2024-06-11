@@ -64,3 +64,42 @@ docker ps -a -f status=running
 Remove
 
 docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+-------------------------------------------------------------------------------------
+
+==============  VIDER LE CACHE ==============================
+Supprimer les conteneurs arrêtés
+docker container prune
+
+Supprimer les images inutilisées
+docker image prune
+Pour supprimer toutes les images inutilisées (y compris les images de base intermédiaires), utilisez l'option -a :
+docker image prune -a
+
+Supprimer les volumes inutilisés
+docker volume prune
+
+Supprimer les réseaux inutilisés
+docker network prune
+
+Nettoyage complet
+docker system prune
+Si vous souhaitez également supprimer toutes les images inutilisées, y compris les images de base intermédiaires, utilisez l'option -a :
+docker system prune -a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
