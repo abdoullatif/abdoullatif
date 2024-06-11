@@ -87,7 +87,13 @@ docker system prune
 Si vous souhaitez également supprimer toutes les images inutilisées, y compris les images de base intermédiaires, utilisez l'option -a :
 docker system prune -a
 
+---------------------------------------------------------------------------------------------
 
+======================== INSPECTER LE RESEAU DOCKER COMPOSE
+
+docker network inspect nom_du_reseau
+Ex
+docker network inspect openimis-be_py-develop_default
 
 
 
