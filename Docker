@@ -38,6 +38,14 @@ db.sqlite3
 Construire l'image Docker :
 docker build -t nom_de_votre_projet .
 
+lancer les container
+docker compose up -d
+
+Arreter les container
+docker compose down
+
+
+
 Lancer le conteneur Docker :
 docker run -p 8000:8000 nom_de_votre_projet
 
