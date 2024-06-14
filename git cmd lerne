@@ -138,12 +138,103 @@ git merge
 changer de branch :
 git checkout -b coreMIS origin/coreMIS
 
+-----------------------------------------------------------------------------------------
+
+Version
+git --version
+
+configuration
+git config --global user.name "name"
+git config --global user.email "email"
+
+Ajouter un fichier 
+git add file.ext
+
+Voir le status des fichier
+git status
+
+Enregistrement des modifications 
+git commit -m "Message"
+
+processus d'enregistrement complet
+git add * / git add .
+
+git commit -m "message"
+
+Lister tous les commit
+git log (Une fenetre nano ou vim s'ouvrira taper :q pour quitter)
+
+pour revenir a un commit 
+git checkout UUID
+
+Pour revenir au commit le plus recent
+git checkout master
+pour forcer le retour
+git checkout master -f
+
+Voir les branche
+git branch
+
+changer de branch
+git checkout nom_de_la_branch
+
+Fusionner les branches
+Pour fusionner les branches : il faut se positionner sur la branche qui va recevoir les modifications apporter a l'autre branche
+Fusionner les branches
+git merge nom_de_la_branche_avec_modification
+
+Supprimer une branche
+git branch -d nom_de_la_branch
+
+Restaurer a l'etat du commit precedent
+git reset --hard HEAD
+
+Sauvegarde temporaire 
+Sauvegarder temporairement les dernières modifications et renitialiser au dernier commit
+git stash
+
+Voir les dernier stash
+git stash list
+
+Appliquer le dernier stash
+git stash apply
+
+Appliquer un stash spécifique 
+git stash apply stash{nombre}
+
+Supprimer un stash
+git stash drop stash@{nombre}
+
+Supprimer tous les stash
+git stash clear
+
+Appliquer et supprimer un stash
+git stash pop
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
 
 Autre #ref
 https://www.datacamp.com/tutorial/git-push-pull
