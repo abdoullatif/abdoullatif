@@ -211,7 +211,8 @@ git stash clear
 Appliquer et supprimer un stash
 git stash pop
 
-
+Renommer une branch
+git branch -m current-name new-name
 
 
 
