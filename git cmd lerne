@@ -217,7 +217,15 @@ git stash pop
 Renommer une branch
 git branch -m current-name new-name
 
+--------------------------------------------------------------------------------------------
+========================== Lier le Dépôt Local à un Dépôt Distant ==========================
 
+Ajouter le dépôt distant :
+git remote add origin <url-du-depot-distant>
+
+
+Vérifier la connexion au dépôt distant :
+git remote -v
 
 
 
