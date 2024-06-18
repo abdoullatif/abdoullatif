@@ -175,6 +175,9 @@ git checkout master -f
 Voir les branche
 git branch
 
+Creer une nouvelle branche 
+git checkout -b nom_de_la_branch
+
 changer de branch
 git checkout nom_de_la_branch
 
