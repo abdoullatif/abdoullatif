@@ -132,6 +132,9 @@ git fetch
 fusionner pull et merge to local
 git merge
 
+voir les branches en ligne
+git branch -r
+
 
 -----------------------------------------------------------------------------------------
 
