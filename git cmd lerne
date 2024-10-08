@@ -39,6 +39,9 @@ git remote add origin https://github.com/exemple/exemple.git
 //
 git branch -M main
 
+voir le depot distant :
+git remote -v
+
 lancer le commit sur le git distant
 git push 'remote_name' 'branch_name'
 git push -u origin master
