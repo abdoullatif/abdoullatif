@@ -233,10 +233,92 @@ git remote add origin <url-du-depot-distant>
 Vérifier la connexion au dépôt distant :
 git remote -v
 
+========================== PERTE DE FICHIER GIT =============================================
 
 
+Pas de panique ! 🚨 Git ne supprime généralement pas définitivement les fichiers après une annulation de rebase. Il y a plusieurs façons de les récupérer.
 
+1️⃣ Vérifier si les fichiers sont toujours dans le "Working Directory"
+Tape cette commande pour voir si Git reconnaît encore tes fichiers comme supprimés :
 
+bash
+Copier
+Modifier
+git status
+Si Git affiche des fichiers supprimés en rouge, tu peux les restaurer avec :
+
+bash
+Copier
+Modifier
+git checkout -- <nom_du_fichier>
+Ou pour tous les fichiers :
+
+bash
+Copier
+Modifier
+git checkout -- .
+2️⃣ Vérifier le Reflog (Historique des Actions Git)
+Si Git ne voit pas tes fichiers, utilise cette commande :
+
+bash
+Copier
+Modifier
+git reflog
+Cela liste toutes les actions récentes, y compris les commits, rebases, merges, etc.
+
+Si tu vois une ligne qui correspond à ton travail perdu, note le hash (ex: abc1234) et restaure ton travail avec :
+
+bash
+Copier
+Modifier
+git checkout abc1234
+Puis, copie tes fichiers manuellement avant de revenir à ta branche :
+
+bash
+Copier
+Modifier
+git checkout develop
+3️⃣ Vérifier le Stash
+Si tu avais utilisé git stash avant d'annuler le rebase, tes fichiers sont sauvegardés. Vérifie avec :
+
+bash
+Copier
+Modifier
+git stash list
+Si tu vois un stash, récupère-le avec :
+
+bash
+Copier
+Modifier
+git stash pop
+4️⃣ Vérifier les commits locaux perdus
+Si tu avais déjà commité tes fichiers avant la rebase, utilise :
+
+bash
+Copier
+Modifier
+git fsck --lost-found
+Ou encore :
+
+bash
+Copier
+Modifier
+git log --all --oneline
+Si tu vois un commit qui contient ton travail, récupère-le avec :
+
+bash
+Copier
+Modifier
+git checkout <hash_du_commit>
+Puis copie les fichiers.
+
+Que faire si rien ne fonctionne ?
+Si aucun des fichiers ne réapparaît, essaie un outil de récupération comme testdisk ou extundelete (pour Linux/Mac).
+
+La prochaine fois, pense à utiliser git stash ou à commit tes fichiers avant un rebase ! 😃
+Dis-moi si tu retrouves tes fichiers ! 🚀
+
+=======================================================================================
 
 
 
